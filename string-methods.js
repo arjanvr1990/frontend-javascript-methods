@@ -13,6 +13,12 @@ console.log(word.length);
 const fruit = "Banaan";
 const vegetable = "Aardappel";
 
+const fruitLenght = fruit.length
+const vegatableLenght = vegetable.length
+
+if (fruitLenght > vegatableLenght) {
+    console.log("true")
+} else console.log("false")
 
 
 /* Opdracht 2 */
@@ -21,7 +27,7 @@ const vegetable = "Aardappel";
 // ---- Verwachte uitkomst voor fruit: "n"
 // ---- Verwachte uitkomst voor vegetable: "l"
 
-
+console.log(fruitLenght)
 
 /* Opdracht 3 */
 //  Haal de spaties aan het begin en eind van onderstaande zin weg en log dit in de terminal
@@ -29,7 +35,7 @@ const vegetable = "Aardappel";
 
 const userInput = "  De kat krabt de krullen van de trap ";
 
-
+console.log(userInput.trim());
 
 /* Opdracht 4 */
 // Check of het woord "Fantastisch" in onderstaande zin voorkomt en log dit in de terminal.
