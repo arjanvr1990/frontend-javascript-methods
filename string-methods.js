@@ -27,7 +27,12 @@ if (fruitLenght > vegatableLenght) {
 // ---- Verwachte uitkomst voor fruit: "n"
 // ---- Verwachte uitkomst voor vegetable: "l"
 
-console.log(fruitLenght)
+const fruitLastLetter = fruit[fruitLenght-1]
+const vegatableLastLetter = vegetable[vegatableLenght-1]
+
+
+console.log(fruitLastLetter);
+console.log(vegatableLastLetter);
 
 /* Opdracht 3 */
 //  Haal de spaties aan het begin en eind van onderstaande zin weg en log dit in de terminal
@@ -41,15 +46,16 @@ console.log(userInput.trim());
 // Check of het woord "Fantastisch" in onderstaande zin voorkomt en log dit in de terminal.
 // ---- Verwachte uitkomst: true
 
-const story = "We vinden de behaalde resultaten werkelijk prachtig. Fantastisch, nietwaar?"
+const story = "We vinden de behaalde resultaten werkelijk prachtig. Fantastisch, nietwaar?";
 
-
+console.log(story.includes("Fantastisch"));
 
 /* Opdracht 5 */
 // Knip de vraag van bovenstaande tekst (story) af, zodat alleen het eerste gedeelte overblijft en log dit in de terminal.
 // ---- Verwachte uitkomst: "We vinden de behaalde resultaten werkelijk prachtig."
 
-
+console.log(story.lastIndexOf(" F"));
+console.log(story.substring(0, 52));
 
 /* Opdracht 6 */
 // Maak van onderstaand bedrag een Nederlands bedrag door het volgende te doen:
@@ -60,7 +66,7 @@ const story = "We vinden de behaalde resultaten werkelijk prachtig. Fantastisch,
 
 const price = "$35.59";
 
-
+console.log(price.replaceAll("$", "€"));
 
 
 
